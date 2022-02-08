@@ -1,7 +1,20 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    debugScreens: {
+      position: ['top', 'left'],
+    },
+    extend: {
+      fontFamily: {
+        headline: ['Oswald']
+      },
+      colors: {
+        mainColor: '#212f49'
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-debug-screens'),
+  ],
 }

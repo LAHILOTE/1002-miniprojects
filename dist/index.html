@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 
-<body class="bg-blue-400">
+<body class="bg-mainColor debug-screens">
+    <div x-data="{ count: 0 }">
+        <button x-on:click="count++">Increment</button>
 
+        <span x-text="count"></span>
+    </div>
+
+    <div class="container min-h-screen mx-auto bg-gray-100 lg:bg-blue-500">
+        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+
+
+
+        <h1 class="dark:text-yellow-200">H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <span class="text-indigo-900 italic text-4xl sm:text-5xl lg:text-6xl opacity-80">
+            <q>&nbsp;I'll get you in shape&nbsp;</q>
+        </span>
+    </div>
 </body>
 
 </html>
