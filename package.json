@@ -1,0 +1,19 @@
+{
+  "name": "1002-miniprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "b": "postcss tailwind.css -o dist/css/styles.css",
+    "w": "postcss tailwind.css -o dist/css/styles.css --watch"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.19"
+  }
+}
